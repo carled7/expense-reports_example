@@ -1,0 +1,63 @@
+[
+  {
+    "type": "text",
+    "name": "Field 01",
+    "description": "first field",
+    "className": "field01",
+    "content": {
+      "expression": "{{%%expenses/1716155614454.md%%.category}}"
+    }
+  },
+  {
+    "type": "text",
+    "name": "Field 02",
+    "description": "second field",
+    "className": "field02",
+    "content": {
+      "expression": "{{%%expenses/1716155633804.md%%.category + ' ' + $$.field01}}"
+    }
+  },
+  {
+    "type": "text",
+    "name": "Field 03",
+    "description": "third field",
+    "className": "field03",
+    "content": {
+      "expression": "{{$$.field02}}"
+    }
+  },
+  {
+    "type": "number",
+    "name": "Field 00",
+    "description": "cost field",
+    "className": "costfield",
+    "content": {}
+  },
+  {
+    "type": "dropdown",
+    "name": "Field 04",
+    "description": "forth field",
+    "className": "field04",
+    "content": {
+      "expression": "{{$$.field03}}"
+    },
+    "options": {
+      "value": [
+        "a",
+        "b"
+      ]
+    }
+  },
+  {
+    "type": "dropdown",
+    "name": "Field 05",
+    "description": "fifth field",
+    "className": "field05",
+    "content": {
+      "expression": "{{$$.field02}}"
+    },
+    "options": {
+      "expression": "{{Object.values(%%my props.md%%).map(i => i.toUpperCase())}}"
+    }
+  }
+]

@@ -1,0 +1,11 @@
+{
+	"id": "expense-form-plugin",
+	"name": "Expense Form Plugin",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Form to report expense in a structured way.",
+	"author": "Carlos desenvolves enterprise",
+	"authorUrl": "https://obsidian.md",
+	"fundingUrl": "https://obsidian.md/pricing",
+	"isDesktopOnly": false
+}
